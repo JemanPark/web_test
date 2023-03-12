@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="width: 70%; margin: auto">
+            <table border="1">
+                <tr>
+                    {% for key in testDict.keys() %}
+                    <td>{{ key }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for value in testDict.values() %}
+                    <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

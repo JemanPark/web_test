@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="width: 70%; margin: auto">
+            {% for item in testList %}
+            <div style="padding: 10px; background-color: #EEE; margin: 20px">
+                <p style="font-size: 24px">{{ item.shortForecast }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

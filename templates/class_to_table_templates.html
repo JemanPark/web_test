@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="width: 70%; margin: auto">
+            <table border="1">
+                {% for item in testList %}
+                <tr>
+                    <td>{{ item.time }}</td>
+                </tr>
+                <tr>
+                    <td>{{ item.shortForecast }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+</html>

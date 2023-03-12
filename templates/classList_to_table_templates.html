@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="width: 70%; margin: auto">
+            <table border="1">
+                <tr>
+                    {% for item in htmlList %}
+                    <td>{{ item.time }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for item in htmlList %}
+                    <td>{{ item.shortForecast }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for item in htmlList %}
+                    <td>
+                        {% if "Rain" in item.shortForecast %}
+                            <img src="https://img.icons8.com/ios/512/rainy-weather.png" width="50" height="50">
+                        {% elif "Sunny" in item.shortForecast or "Clear" in item.shortForecast %}
+                            <img src="https://img.icons8.com/external-others-zufarizal-robiyanto/512/external-day-mutuline-spring-others-zufarizal-robiyanto.png" width="50" height="50">
+                        {% elif "Cloudy" in item.shortForecast %}
+                            <img src="https://img.icons8.com/external-outline-juicy-fish/512/external-three-weather-outline-outline-juicy-fish-3.png" width="50" height="50">
+                        {% elif "Thunderstorms" in item.shortForecast %}
+                            <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/512/external-thunderstorm-weather-justicon-lineal-color-justicon.png" width="50" height="50">
+
+                        {% endif %}
+                    </td>
+                    
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for item in htmlList %}
+                    <td>{{ item.temperature }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for item in htmlList %}
+                    <td>{{ item.humidity }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for item in htmlList %}
+                    <td>{{ item.chanceOfRain }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for item in htmlList %}
+                    <td>{{ item.windSpeed }}</td>
+                    {% endfor %}
+                </tr>
+
+            </table>
+        </div>
+    </body>
+</html>
+
+
