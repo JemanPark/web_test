@@ -60,7 +60,7 @@ def weatherinformation():
     data_json = response.json()
 
     
-
+    # parsing
     # print(data_json)
     # print(data_json['properties']['periods'][0]['temperature'])
 
